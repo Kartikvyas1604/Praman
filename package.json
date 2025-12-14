@@ -1,0 +1,31 @@
+{
+  "name": "praman-certificate-verification",
+  "version": "1.0.0",
+  "description": "Multi-chain blockchain certificate issuance and verification system",
+  "private": true,
+  "workspaces": [
+    "contracts/evm",
+    "contracts/solana",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "start": "npm run start --workspace=frontend",
+    "compile:evm": "npm run compile --workspace=contracts/evm",
+    "compile:solana": "npm run build --workspace=contracts/solana",
+    "test:evm": "npm run test --workspace=contracts/evm",
+    "test:solana": "npm run test --workspace=contracts/solana"
+  },
+  "keywords": [
+    "blockchain",
+    "certificate",
+    "verification",
+    "ethereum",
+    "base",
+    "solana",
+    "nextjs"
+  ],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,6 +1,6 @@
 import { base, mainnet } from 'wagmi/chains';
 
-export const CONTRACTS = {
+export const CONTRACTS: Record<number, { address: `0x${string}`; name: string }> = {
   [mainnet.id]: {
     address: process.env.NEXT_PUBLIC_ETHEREUM_CONTRACT_ADDRESS as `0x${string}`,
     name: 'Ethereum',
